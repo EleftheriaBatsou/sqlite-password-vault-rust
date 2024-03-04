@@ -7,10 +7,9 @@ fn clr() {
     print!("{}[2J", 27 as char);
 }
 
-// This are first few lines of the code, 
 // it imports the db.rs file,
 fn main() {
-    // Making connection to the database
+    // Making a connection to the database
     let conn = init_database().expect("Failed to initialize the database");
     clr();
     // Here, the main function begins, first thing, it begins the connection to the database,
